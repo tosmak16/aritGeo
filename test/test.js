@@ -22,6 +22,11 @@ describe("Determine the sequence of an array of numbers: ", () => {
             assert.equal(app.aritGeo([2, 4, 8]), "Geometric");
         })
     })
+    describe("if the array entered is neither geometric nor arithmetic progression", () => {
+        it("should return -1", () => {
+            assert.equal(app.aritGeo([1, 3, 7, 10]), -1);
+        })
+    })
 
 
 
