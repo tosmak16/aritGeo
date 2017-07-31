@@ -11,9 +11,15 @@ describe("Determine the sequence of an array of numbers: ", () => {
 
         })
         // To test for if AP is valid
-    describe(" if the array entered is an arithmetic progression ", () => {
+    describe("check if the array entered is an arithmetic progression ", () => {
         it("should return Arithmetic", () => {
             assert.equal(app.aritGeo([1, 2]), "Arithmetic");
+        })
+    })
+
+    describe("check if the array entered is a geometric progression", () => {
+        it("should return Geometric", () => {
+            assert.equal(app.aritGeo([2, 4, 8]), "Geometric");
         })
     })
 

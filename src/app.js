@@ -21,5 +21,7 @@ function aritGeo(a) {
 
     if (ap === true)
         return "Arithmetic";
+    else if (gp === true)
+        return "Geometric";
 }
 module.exports.aritGeo = aritGeo;
